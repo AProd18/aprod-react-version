@@ -1,0 +1,30 @@
+.cursorLight {
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8) 0.1%,
+    rgba(0, 0, 0, 0.8) 0.1%,
+    rgba(255, 255, 255, 0.1) 0.1%,
+    rgba(255, 255, 255, 0.3) 0.2%,
+    rgba(255, 255, 255, 0.1) 0.2%,
+    rgba(0, 0, 0, 0) 44%
+  );
+  border-radius: 50%;
+  pointer-events: none; /* Make sure the light doesn't interfere with clicking */
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out; /* Smoother and faster movement */
+}
+
+/*
+*********************
+BELOW 544px (Phones)
+*********************
+*/
+
+@media (max-width: 34em) {
+  .cursorLight {
+    display: none;
+  }
+}

@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Percentage of user's browser font-size setting */
+  font-size: 67.3%;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0e141b;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Main Content Styles */
+.main {
+  display: none;
+}
+
+/*
+*********************
+BELOW 1344px (Smaller desktops)
+*********************
+*/
+
+@media (max-width: 84em) {
+  main {
+    padding: 80px 28px;
+    padding-left: 120px;
+  }
+
+  body {
+    overflow-x: hidden;
+    line-height: 1.2;
+  }
+}
+
+/*
+*********************
+BELOW 944px (Tablets)
+*********************
+*/
+@media (max-width: 59em) {
+  main {
+    padding: 80px 28px;
+    padding-left: 120px;
+  }
+
+  body {
+    overflow-x: hidden;
+    line-height: 1.2;
+  }
+}
+
+/*
+*********************
+BELOW 704px (Smaller Tablets)
+*********************
+*/
+@media (max-width: 44em) {
+  body {
+    overflow-x: hidden;
+    line-height: 1.3;
+  }
+
+  main {
+    padding: 80px 28px;
+  }
+}
+
+/*
+*********************
+BELOW 544px (Phones)
+*********************
+*/
+@media (max-width: 34em) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    padding: 100px 12px;
+  }
+}
+
+/*
+*********************
+BELOW 400px (Phones)
+*********************
+*/
+@media (max-width: 25em) {
+  body {
+    overflow-x: hidden;
+    line-height: 1.3;
+  }
+
+  main {
+    padding: 100px 12px;
+  }
+}

@@ -1,0 +1,158 @@
+.flexContainer {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border-top: solid rgba(255, 255, 255, 0.03);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.bottomRow {
+  display: none;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.footerSocialIcons {
+  display: none; /* Hide by default */
+  gap: 8px;
+}
+
+.iconF {
+  width: 25px;
+}
+
+.copyRight {
+  color: #d2f5f0;
+  font-size: 1.2rem;
+}
+
+.localTimeFooter {
+  color: #d2f5f0;
+  font-size: 1.2rem;
+  border: solid rgba(255, 255, 255, 0.056);
+  padding: 5px 10px;
+}
+
+#moveUpButton {
+  margin-left: 20px;
+  font-size: 1em;
+  padding: 5px 10px;
+  background-color: rgba(20, 89, 97, 0.335);
+  opacity: 100%;
+  color: #6aead6;
+  border: 1.5px solid rgba(255, 255, 255, 0.026);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Inter";
+}
+
+#moveUpButton:hover {
+  color: #c5fffa;
+  transition: 0.5s;
+  background-color: transparent;
+}
+
+/*
+*********************
+BELOW 544px (Phones)
+*********************
+*/
+@media (max-width: 34em) {
+  /* SOCIAL ICONS FOR FOOTER */
+
+  .flexContainer {
+    margin-top: 70px;
+  }
+
+  .socialIcons {
+    display: none;
+  }
+  .footerSocialIcons {
+    display: flex;
+    justify-content: center;
+  }
+  .social-icons {
+    display: none;
+  }
+
+  .bottomRow {
+    display: block;
+  }
+
+  .copyRightDesktop {
+    display: none;
+  }
+
+  .localTimeFooter {
+    font-size: 1.1em;
+    margin-left: 19px;
+    border: 1.5px solid rgba(255, 255, 255, 0.026);
+  }
+
+  .copyRight {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 34em) {
+  .bottomRow {
+    display: none;
+  }
+
+  .copyRightDesktop {
+    display: block;
+  }
+}
+
+/*
+*********************
+BELOW 400px (Phones)
+*********************
+*/
+@media (max-width: 25em) {
+  .local-time-footer {
+    margin-left: 0px;
+  }
+}
+
+/*
+*********************
+BELOW 390.4px
+*********************
+*/
+@media (max-width: 24.4em) {
+  .local-time-footer {
+    margin-left: 0px;
+  }
+}
+
+/*
+*********************
+BELOW 375px
+*********************
+*/
+@media (max-width: 23.5em) {
+  .local-time-footer {
+    margin-left: 0px;
+  }
+}
+
+/*
+*********************
+BELOW 360px
+*********************
+*/
+@media (max-width: 22.5em) {
+  .local-time-footer {
+    margin-left: 0px;
+  }
+}

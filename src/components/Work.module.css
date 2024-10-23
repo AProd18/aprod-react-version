@@ -1,0 +1,340 @@
+.workSection {
+  display: flex;
+  padding: 2px;
+  height: auto;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.8rem 0 12rem 0;
+  max-width: 950px;
+  margin: 0px auto;
+  color: #d2f5f0;
+  gap: 10px;
+}
+
+.workHeading {
+  margin-left: 60px;
+  text-align: left;
+  letter-spacing: 1.2px;
+  font-size: 2.6rem;
+  color: #6aead6;
+  font-weight: 400;
+}
+
+/* Tabs container */
+.workTable {
+  display: grid;
+  justify-content: center;
+  /* width: fit-content; */
+}
+
+.workContainer {
+  display: grid;
+  width: 850px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  border: solid rgba(255, 255, 255, 0.03);
+  border-radius: 0.5em;
+}
+
+.workContent {
+  display: none;
+  grid-column: 1 / -1;
+  font-size: 1.4em;
+  /* color: #d2f5f0; */
+}
+
+/* Show the active tab content */
+input:checked + label + .workContent,
+input:checked + label + input + label + .workContent,
+input:checked + label + input + label + input + label + .workContent,
+input:checked
+  + label
+  + input
+  + label
+  + input
+  + label
+  + input
+  + label
+  + .workContent {
+  display: grid;
+}
+
+.contentP1 {
+  font-weight: 200;
+  line-height: 1.625;
+  padding: 8px;
+  opacity: 70%;
+  color: #00ff99;
+}
+
+.contentP2 {
+  font-weight: 200;
+  line-height: 1.625;
+  padding: 8px;
+  opacity: 70%;
+}
+
+.contentP {
+  font-weight: 200;
+  line-height: 1.625;
+  padding: 8px;
+  opacity: 70%;
+  font-family: "Inter";
+}
+
+.contentP span {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* WORK ICONS */
+.contentIcons {
+  font-size: 40px;
+  color: #609792;
+  opacity: 95%;
+  cursor: pointer;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.workLinks {
+  color: #d2f5f0;
+  text-decoration: underline;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon:hover {
+  color: #00ff99;
+}
+
+/* TAB CONTROLS */
+/* Hide radios */
+input {
+  display: none;
+}
+input:checked + label {
+  font-size: 1.4em;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 250ms;
+}
+label {
+  cursor: pointer;
+  transition: color 250ms;
+  padding: 1em;
+  border-right: solid 2px var(--page-background-color);
+  background-color: rgba(255, 255, 255, 0.03);
+  text-align: center;
+  transition: all 250ms;
+  font-size: 1.5em;
+}
+label:last-of-type {
+  border: none;
+}
+label:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/*
+*********************
+BELOW 944px (Tablets)
+*********************
+*/
+@media (max-width: 59em) {
+  .workSection {
+    padding: 0;
+  }
+
+  .workHeading {
+    margin-left: 0px;
+    font-size: 2.4em;
+    padding-bottom: 0px;
+  }
+
+  /* Tabs container */
+  .workTable {
+    height: 550px;
+    padding-right: 0px;
+  }
+  .workContainer {
+    width: fit-content;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  .contentP {
+    padding: 10px;
+  }
+
+  .contentP1 {
+    padding-top: 20px;
+  }
+
+  .contentIcons {
+    padding-left: 50px;
+  }
+}
+
+/*
+*********************
+BELOW 704px (Smaller Tablets)
+*********************
+*/
+@media (max-width: 44em) {
+  .workSection {
+    padding: 0;
+    margin-bottom: 250px;
+  }
+
+  .workHeading {
+    margin-left: 0px;
+    font-size: 2.4em;
+    padding-bottom: 0px;
+  }
+
+  /* Tabs container */
+  .workTable {
+    height: 550px;
+    padding-right: 0px;
+  }
+  .workContainer {
+    width: fit-content;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  .contentP {
+    padding: 10px;
+  }
+
+  .contentP1 {
+    padding-top: 20px;
+  }
+
+  .contentIcons {
+    padding-left: 50px;
+  }
+}
+
+/*
+*********************
+BELOW 544px (Phones)
+*********************
+*/
+
+@media (max-width: 34em) {
+  .workSection {
+    padding: 0;
+    margin-top: 140px;
+    row-gap: 15px;
+  }
+
+  .workHeading {
+    margin-left: 12px;
+    font-size: 2.4em;
+  }
+
+  /* Tabs container */
+  .workTable {
+    height: 550px;
+  }
+  .workContainer {
+    width: fit-content;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  .contentP {
+    padding: 20px;
+  }
+
+  .contentP1 {
+    padding-top: 20px;
+  }
+
+  .contentIcons {
+    padding-left: 50px;
+  }
+}
+
+/*
+*********************
+BELOW 400px (Phones)
+*********************
+*/
+@media (max-width: 25em) {
+  .workSection {
+    padding: 0;
+    margin-top: 140px;
+    row-gap: 15px;
+  }
+
+  /* Tabs container */
+  .workTable {
+    height: 550px;
+  }
+  .workContainer {
+    width: fit-content;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  .contentP {
+    padding: 20px;
+  }
+
+  .contentP1 {
+    padding-top: 20px;
+  }
+
+  .contentIcons {
+    padding-left: 50px;
+  }
+}
+
+/*
+*********************
+BELOW 390.4px
+*********************
+*/
+@media (max-width: 24.4em) {
+}
+
+/*
+*********************
+BELOW 375px
+*********************
+*/
+@media (max-width: 23.5em) {
+}
+
+/*
+*********************
+BELOW 360px
+*********************
+*/
+
+@media (max-width: 22.5em) {
+  .contentIcons {
+    padding-right: 5px;
+  }
+}

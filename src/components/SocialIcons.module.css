@@ -1,0 +1,39 @@
+.icons {
+  position: fixed;
+  top: 0px;
+  margin-left: 60px;
+}
+
+.icons::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 150px;
+  margin: 0px auto;
+  background-color: #fff;
+  opacity: 30%;
+  margin-bottom: 20px;
+}
+
+.ionIcon {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: #ffffff;
+  opacity: 85%;
+}
+
+.iconLi a:hover .ionIcon {
+  color: #6aead6;
+  transform: scale(1.1) translateY(-5px);
+}
+
+.iconLi {
+  margin-bottom: 20px;
+}
+
+/* HIDE ICONS BELOW 550px */
+@media (max-width: 550px) {
+  .icons {
+    display: none;
+  }
+}

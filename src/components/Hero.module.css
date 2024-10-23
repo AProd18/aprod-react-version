@@ -1,0 +1,257 @@
+.fadeInSection {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fadeInSection.isVisible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.heroSection {
+  display: flex;
+  padding: 0px;
+  height: auto;
+  min-height: 80vh;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.8rem 8.6rem 0rem;
+  margin: 0px auto;
+  max-width: fit-content;
+  line-height: 1.4;
+  padding-bottom: 250px;
+  margin-top: 150px;
+}
+
+.heroName {
+  font-size: 5.2rem;
+  font-weight: 600;
+  color: #d2f5f0;
+  opacity: 80%;
+  font-family: "Inter";
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.headingName {
+  position: relative;
+  font-size: 5.5rem;
+  font-weight: 600;
+  color: white;
+  opacity: 90%;
+}
+
+/* Hero section paragraph animation mimicking a typing effect with blinking cursor */
+.heroAnimation {
+  color: #6aead6;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 1.5s steps(20, end) 1.2s infinite,
+    animated-cursor 800ms linear infinite; /* Typing effect and blinking cursor */
+}
+
+@keyframes animated-text {
+  from {
+    width: 0; /* Start with hidden text */
+  }
+  to {
+    width: 140px; /* Reveal text progressively */
+  }
+}
+@keyframes animated-cursor {
+  from {
+  }
+  to {
+    border-right-color: transparent; /* Simulate cursor blinking */
+  }
+}
+
+.heroDescription {
+  font-family: "Inter";
+  font-size: 1.7em;
+  font-weight: 200;
+  color: #d2f5f0;
+  opacity: 70%;
+  letter-spacing: 0.5px;
+  margin-bottom: 4rem;
+  line-height: 1.3;
+  max-width: 540px;
+  min-width: 300px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.hero-span {
+  font-size: 2.4rem;
+  opacity: 80%;
+}
+
+.heroBtn {
+  font-size: 1.6rem;
+  opacity: 100%;
+  color: #6aead6;
+  border: 1.5px solid rgba(255, 255, 255, 0.046);
+  background-color: rgba(20, 89, 97, 0.335);
+  border-radius: 2px;
+  padding: 1.4rem;
+  font-family: "Inter";
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.heroBtn:hover {
+  transition: 0.5s;
+  background-color: transparent;
+}
+
+/*
+*********************
+BELOW 944px (Tablets)
+*********************
+*/
+@media (max-width: 59em) {
+  .heroSection {
+    padding: 0px;
+    margin-bottom: 180px;
+    margin-top: 0px;
+  }
+
+  .heroName {
+    font-size: 4em;
+  }
+
+  .heroDescription {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .heroBtn {
+    font-size: 1.2em;
+  }
+}
+
+/*
+*********************
+BELOW 704px (Smaller Tablets)
+*********************
+*/
+@media (max-width: 44em) {
+  /* .arrowsAnimation {
+    top: 260px;
+    left: 300%;
+  } */
+
+  .heroSection {
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  .heroName {
+    font-size: 4em;
+  }
+
+  .heroDescription {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .heroBtn {
+    font-size: 1.2em;
+  }
+}
+
+/*
+*********************
+BELOW 544px (Phones)
+*********************
+*/
+
+@media (max-width: 34em) {
+  .heroBtn {
+    border: 1.5px solid rgba(255, 255, 255, 0.046);
+  }
+
+  .heroSection {
+    min-height: 60vh;
+  }
+
+  .arrowsAnimation {
+    top: 250px;
+    left: 170px;
+  }
+
+  .heroDescription {
+    font-size: 1.5em;
+  }
+}
+
+/*
+*********************
+BELOW 400px (Phones)
+*********************
+*/
+@media (max-width: 25em) {
+  .heroSection {
+    min-height: 60vh;
+  }
+
+  .headingName {
+    font-size: 1.1em;
+  }
+
+  .heroDescription {
+    text-align: justify;
+    width: 100%;
+    font-size: 1.4em;
+  }
+
+  .heroBtn {
+    font-size: 1.1em;
+  }
+}
+
+/*
+*********************
+BELOW 390.4px
+*********************
+*/
+@media (max-width: 24.4em) {
+  .arrowsAnimation {
+    top: 210px;
+    left: 150px;
+  }
+}
+
+/*
+*********************
+BELOW 375px
+*********************
+*/
+@media (max-width: 23.5em) {
+  .arrowsAnimation {
+    top: 80px;
+    left: 140px;
+  }
+}
+
+/*
+*********************
+BELOW 360px
+*********************
+*/
+
+@media (max-width: 22.5em) {
+  .arrowsAnimation {
+    top: 120px;
+    left: 130px;
+  }
+}
