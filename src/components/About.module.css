@@ -159,6 +159,7 @@ BELOW 704px (Smaller Tablets)
     max-width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 120px;
+    padding: 8px;
   }
 
   .aboutText__grid {
@@ -171,6 +172,10 @@ BELOW 704px (Smaller Tablets)
     padding-left: 95px;
     grid-area: b;
     grid-row: 0;
+  }
+
+  .aboutParagraph__first {
+    margin-bottom: -8px;
   }
 }
 
@@ -214,7 +219,7 @@ BELOW 544px (Phones)
   }
 
   .aboutAuthor__image {
-    margin-top: 37px;
+    margin-top: 60px;
     margin-left: -30px;
     width: 89%;
     height: 75%;
@@ -323,6 +328,10 @@ BELOW 375px
     width: 240px;
     height: 230px;
   }
+
+  .aboutParagraph__first {
+    margin-bottom: 5px;
+  }
 }
 
 /*
@@ -343,5 +352,8 @@ BELOW 360px
     margin-left: 20px;
     width: 230px;
     height: 220px;
+  }
+  .aboutParagraph__first {
+    margin-bottom: 15px;
   }
 }
