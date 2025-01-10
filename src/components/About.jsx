@@ -23,23 +23,27 @@ function About() {
               as a creator of in-game items and mechanics. Shortly after that,
               in 2010/11, I began working in web development, which fulfilled me
               the most, and I worked for a company called{" "}
-              <strong>Six-Solutions.</strong>
+              <a className={styles.strongLink}>Six-Solutions.</a>
               <br />
               Later, in 2013, I enrolled in the{" "}
-              <a className={styles.workLinks} href="https://singidunum.ac.rs/">
-                <strong>Faculty of Computer Science</strong>
+              <a className={styles.strongLink} href="https://singidunum.ac.rs/">
+                <a className={styles.strongLink}>Faculty of Computer Science</a>
               </a>{" "}
               and during my second year, I started an internship at the company{" "}
-              <strong>Brain-Win Project</strong>. For many years alongside my
-              job, I have also been doing <strong>freelance work</strong> as
-              side jobs, mostly as a full-stack web developer.
+              <a className={styles.strongLink}>Brain-Win Project</a>. For many
+              years alongside my job, I have also been doing{" "}
+              <a className={styles.strongLink}>freelance work</a> as side jobs,
+              mostly as a full-stack web developer.
             </p>
           </FadeInSection>
           <FadeInSection>
             <p className={styles.aboutParagraph__third}>
-              My main focus these days is building <strong>accessible</strong>,
-              <strong>inclusive products and digital experiences</strong> I have
-              a proven track record of creating engaging, dynamic, and
+              My main focus these days is building{" "}
+              <a className={styles.strongLink}>accessible</a>,
+              <a className={styles.strongLink}>
+                inclusive products and digital experiences
+              </a>{" "}
+              I have a proven track record of creating engaging, dynamic, and
               responsive websites that are optimized for performance and user
               experience.
             </p>

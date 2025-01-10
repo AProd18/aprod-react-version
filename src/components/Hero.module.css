@@ -13,6 +13,12 @@
   visibility: visible;
 }
 
+.strongLink {
+  font-weight: 700;
+  color: #fff;
+  opacity: 100%;
+}
+
 .heroSection {
   display: flex;
   padding: 0px;
@@ -77,17 +83,17 @@
 
 .heroDescription {
   font-family: "Inter";
-  font-size: 1.7em;
-  font-weight: 200;
-  color: #d2f5f0;
+  font-weight: 400;
+  color: #acc8c3;
   opacity: 70%;
   letter-spacing: 0.5px;
   margin-bottom: 4rem;
   line-height: 1.3;
-  max-width: 540px;
+  font-size: 1.5em;
+  max-width: 500px;
   min-width: 300px;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
 }
 
 .hero-span {
@@ -129,11 +135,6 @@ BELOW 944px (Tablets)
     font-size: 4em;
   }
 
-  .heroDescription {
-    text-align: justify;
-    width: 100%;
-  }
-
   .heroBtn {
     font-size: 1.2em;
   }
@@ -157,11 +158,6 @@ BELOW 704px (Smaller Tablets)
 
   .heroName {
     font-size: 4em;
-  }
-
-  .heroDescription {
-    text-align: justify;
-    width: 100%;
   }
 
   .heroBtn {
@@ -190,7 +186,9 @@ BELOW 544px (Phones)
   }
 
   .heroDescription {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    /* max-width: 360px; */
+    text-align: left;
   }
 }
 
@@ -209,8 +207,7 @@ BELOW 400px (Phones)
   }
 
   .heroDescription {
-    text-align: justify;
-    width: 100%;
+    text-align: left;
     font-size: 1.4em;
   }
 
@@ -229,6 +226,11 @@ BELOW 390.4px
     top: 210px;
     left: 150px;
   }
+
+  .heroDescription {
+    text-align: left;
+    font-size: 1.4em;
+  }
 }
 
 /*
@@ -240,6 +242,11 @@ BELOW 375px
   .arrowsAnimation {
     top: 80px;
     left: 140px;
+  }
+
+  .heroDescription {
+    text-align: left;
+    font-size: 1.4em;
   }
 }
 
@@ -253,5 +260,10 @@ BELOW 360px
   .arrowsAnimation {
     top: 120px;
     left: 130px;
+  }
+
+  .heroDescription {
+    text-align: left;
+    font-size: 1.4em;
   }
 }

@@ -8,8 +8,15 @@
   padding: 2.8rem 0 12rem 0;
   max-width: 850px;
   margin: 0px auto;
-  color: #d2f5f0;
+  /* color: #d2f5f0; */
+  color: #acc8c3;
   gap: 10px;
+}
+
+.strongLink {
+  font-weight: 700;
+  color: #fff;
+  opacity: 100%;
 }
 
 .aboutHeading {
@@ -41,7 +48,7 @@
   grid-area: a;
   font-size: 1.5em;
   opacity: 70%;
-  font-weight: 200;
+  font-weight: 400;
   padding: 10px;
   line-height: 1.625;
   margin-top: -15px;
@@ -118,8 +125,7 @@ BELOW 944px (Tablets)
   }
 
   .aboutText__grid {
-    text-align: justify;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-top: -50px;
   }
 
@@ -159,23 +165,19 @@ BELOW 704px (Smaller Tablets)
     max-width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 120px;
-    padding: 8px;
+    /* padding: 8px; */
   }
 
   .aboutText__grid {
-    text-align: justify;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-top: -50px;
+    opacity: 90%;
   }
 
   .aboutImage__grid {
     padding-left: 95px;
     grid-area: b;
     grid-row: 0;
-  }
-
-  .aboutParagraph__first {
-    margin-bottom: -8px;
   }
 }
 
@@ -187,8 +189,8 @@ BELOW 544px (Phones)
 
 @media (max-width: 34em) {
   .aboutHeading {
-    margin-left: 12px;
-    font-size: 2.4em;
+    margin-left: 10px;
+    font-size: 2.2em;
   }
 
   .aboutSection {
@@ -209,21 +211,37 @@ BELOW 544px (Phones)
       "b b b";
     max-width: 100%;
     grid-template-columns: repeat(3, 1fr);
+    border: none;
   }
 
   .aboutText__grid {
-    margin-top: -10px;
+    margin-top: 12px;
     padding: 10px;
-    text-align: justify;
+    text-align: left;
     font-size: 1.5em;
   }
 
   .aboutAuthor__image {
-    margin-top: 60px;
-    margin-left: -30px;
-    width: 89%;
+    margin-top: 80px;
+    margin-left: -25px;
+    width: 86%;
     height: 75%;
     border-radius: 12px;
+  }
+
+  .aboutParagraph__first {
+    font-weight: 400;
+    opacity: 80%;
+  }
+
+  .aboutParagraph__second {
+    font-weight: 400;
+    opacity: 80%;
+  }
+
+  .aboutParagraph__third {
+    font-weight: 400;
+    opacity: 80%;
   }
 }
 
@@ -254,9 +272,10 @@ BELOW 400px (Phones)
   }
 
   .aboutText__grid {
+    margin-top: -60px;
     padding: 10px;
-    text-align: justify;
-    font-size: 1.6em;
+    text-align: left;
+    font-size: 1.5em;
   }
 
   .aboutImage__grid {
@@ -289,15 +308,15 @@ BELOW 390.4px
       "a a a"
       "b b b"
       "b b b"
+      "b b b"
       "b b b";
     grid-template-columns: repeat(3, 1fr);
   }
 
   .aboutText__grid {
-    margin-top: 100px;
-    padding: 12px;
-    text-align: justify;
-    font-size: 1.4em;
+    margin-top: 210px;
+    text-align: left;
+    font-size: 1.5em;
   }
 
   .aboutImage__grid {
@@ -306,9 +325,9 @@ BELOW 390.4px
 
   .aboutAuthor__image {
     padding: 5px;
-    margin-top: 148px;
-    margin-left: 10px;
-    width: 86%;
+    margin-top: 240px;
+    margin-left: 15px;
+    width: 80%;
   }
 }
 
@@ -319,14 +338,27 @@ BELOW 375px
 */
 @media (max-width: 23.5em) {
   .aboutText__grid {
-    margin-top: 135px;
-    padding: 10px;
+    margin-top: 205px;
   }
+
   .aboutAuthor__image {
-    margin-top: 180px;
-    margin-left: 25px;
-    width: 240px;
-    height: 230px;
+    margin-top: 235px;
+    margin-left: 15px;
+    width: 80%;
+  }
+
+  .aboutDescription {
+    margin-left: 0px;
+    grid-template-areas:
+      "a a a"
+      "a a a"
+      "a a a"
+      "a a a"
+      "b b b"
+      "b b b"
+      "b b b"
+      "b b b";
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .aboutParagraph__first {
@@ -342,16 +374,29 @@ BELOW 360px
 
 @media (max-width: 22.5em) {
   .aboutText__grid {
-    margin-top: 150px;
-    padding: 10px;
-    text-align: justify;
-    font-size: 1.4em;
+    margin-top: 235px;
+    text-align: left;
+    font-size: 1.5em;
   }
   .aboutAuthor__image {
-    margin-top: 200px;
-    margin-left: 20px;
-    width: 230px;
-    height: 220px;
+    margin-top: 170px;
+    margin-left: 15px;
+    width: 80%;
+  }
+
+  .aboutDescription {
+    margin-left: 0px;
+    grid-template-areas:
+      "a a a"
+      "a a a"
+      "a a a"
+      "a a a"
+      "b b b"
+      "b b b"
+      "b b b"
+      "b b b"
+      "b b b";
+    grid-template-columns: repeat(3, 1fr);
   }
   .aboutParagraph__first {
     margin-bottom: 15px;

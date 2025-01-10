@@ -20,9 +20,9 @@ function Hero() {
           <h1 className={styles.headingName}>Aleksandar Prodanovic.</h1>
         </div>
         <div className={styles.heroDescription}>
-          I&apos;m a <strong>full-stack developer</strong> with a passion for
-          creating dynamic, user-friendly web applications that deliver optimal
-          performance and user experience.
+          I&apos;m a <a className={styles.strongLink}>full-stack developer</a>{" "}
+          with a passion for creating dynamic, user-friendly web applications
+          that deliver optimal performance and user experience.
         </div>
         <div>
           <a className={styles.heroBtn} href="#contact" onClick={handleClick}>
