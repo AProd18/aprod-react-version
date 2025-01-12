@@ -8,15 +8,15 @@
   padding: 2.8rem 0 12rem 0;
   max-width: 950px;
   margin: 0px auto;
-  color: #d2f5f0;
-  gap: 10px;
+  color: #acc8c3;
+  gap: 25px;
 }
 
 .workHeading {
   margin-left: 60px;
   text-align: left;
   letter-spacing: 1.2px;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: #6aead6;
   font-weight: 400;
 }
@@ -58,29 +58,49 @@ input:checked
   + label
   + .workContent {
   display: grid;
+  /* color: #d2f5f0; */
 }
 
 .contentP1 {
-  font-weight: 200;
+  /* display: flex;
+  justify-content: center; */
+  font-weight: 400;
   line-height: 1.625;
-  padding: 8px;
-  opacity: 70%;
+  padding: 5px;
+  opacity: 80%;
   color: #00ff99;
+  font-size: 0.8em;
+
+  color: #6aead6;
+  background-color: rgba(20, 89, 97, 0.281);
+  font-family: "Inter";
+  text-decoration: none;
+  margin-top: 12px;
 }
 
 .contentP2 {
-  font-weight: 200;
+  /* display: flex;
+  justify-content: center; */
+  font-weight: 400;
   line-height: 1.625;
   padding: 8px;
-  opacity: 70%;
+  opacity: 80%;
+  font-size: 0.9em;
 }
 
 .contentP {
-  font-weight: 200;
-  line-height: 1.625;
-  padding: 8px;
-  opacity: 70%;
   font-family: "Inter";
+  font-weight: 400;
+  opacity: 80%;
+  font-size: 1em;
+  line-height: 1.625;
+  padding: 15px;
+}
+
+.strongLink {
+  font-weight: 700;
+  color: #fff;
+  opacity: 100%;
 }
 
 .contentP span {
@@ -89,7 +109,7 @@ input:checked
 
 /* WORK ICONS */
 .contentIcons {
-  font-size: 40px;
+  font-size: 30px;
   color: #609792;
   opacity: 95%;
   cursor: pointer;
@@ -99,7 +119,7 @@ input:checked
 
 .workLinks {
   color: #d2f5f0;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .icon {
@@ -116,19 +136,20 @@ input {
   display: none;
 }
 input:checked + label {
-  font-size: 1.4em;
   background-color: rgba(255, 255, 255, 0);
   transition: all 250ms;
 }
 label {
+  font-family: "Inter";
   cursor: pointer;
   transition: color 250ms;
-  padding: 1em;
+  padding: 1.1em;
   border-right: solid 2px var(--page-background-color);
   background-color: rgba(255, 255, 255, 0.03);
   text-align: center;
   transition: all 250ms;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 label:last-of-type {
   border: none;
@@ -219,7 +240,7 @@ BELOW 704px (Smaller Tablets)
   }
 
   .contentP1 {
-    padding-top: 20px;
+    padding-top: 8px;
   }
 
   .contentIcons {
@@ -264,7 +285,7 @@ BELOW 544px (Phones)
   }
 
   .contentP1 {
-    padding-top: 20px;
+    padding-top: 8px;
   }
 
   .contentIcons {
@@ -303,7 +324,7 @@ BELOW 400px (Phones)
   }
 
   .contentP1 {
-    padding-top: 20px;
+    padding-top: 8px;
   }
 
   .contentIcons {
@@ -317,6 +338,9 @@ BELOW 390.4px
 *********************
 */
 @media (max-width: 24.4em) {
+  .contentP1 {
+    padding-top: 8px;
+  }
 }
 
 /*

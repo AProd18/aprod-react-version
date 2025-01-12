@@ -12,7 +12,7 @@ function Work() {
   return (
     <section id="work" className={styles.workSection}>
       <div className={styles.workHeading}>
-        <span className={styles.bgColor}>Places I Have Worked</span>
+        <span className={styles.bgColor}>My Career Path</span>
       </div>
       <div className={styles.workTable}>
         <div className={styles.workContainer}>
@@ -25,7 +25,9 @@ function Work() {
             checked={selectedTab === 1}
             onChange={() => handleTabChange(1)}
           />
-          <label htmlFor="tabToggle01">Gryphon Server</label>
+          <label className={styles.workLabel} htmlFor="tabToggle01">
+            Gryphon Server
+          </label>
           <input
             type="radio"
             id="tabToggle02"
@@ -57,35 +59,40 @@ function Work() {
           {/* Work Content */}
           {selectedTab === 1 && (
             <div className={styles.workContent}>
+              <p className={styles.contentP1}>Game Developer</p>
+              <p className={styles.contentP2}>Jun 2009 - Nov 2010</p>
               <FadeInSection>
-                <p className={styles.contentP1}>@Game Developer</p>
-                <p className={styles.contentP2}>
-                  Jun 2009 - Nov 2010 <br />
-                  Texas, United States · Remote
-                </p>
                 <div className={styles.contentP}>
-                  <FadeInSection>
-                    <p>
-                      <b>Gryphon</b> server was a private World of Warcraft
-                      server where I started playing back in 2009.
-                    </p>
-                    <p>
-                      <br />
-                      Later on, I got employed to create in-game assets and work
-                      in the database. <br /> I used
-                      <b> SQL, MariaDB, MySQL,HeidSQL</b> and created
-                      <b> LUA scripts</b>. <br />
-                      Additionally, using LUA, I scripted bosses, quests, and
-                      creatures within the game itself I also worked extensively
-                      in both C++ and C#..
-                      <br />
-                    </p>
-                  </FadeInSection>
+                  <p>
+                    Gryphon server was a private World of Warcraft server where
+                    I started playing back in 2009. <br />
+                    Later on, I got employed to create in-game assets and work
+                    in the database.
+                  </p>
+                  <p>
+                    <br />
+                    <a className={styles.strongLink}>Quest scripting:</a> I
+                    utilized LUA scripting to program interactive quest chains,
+                    including event triggers, NPC dialogues, and complex reward
+                    systems. This involved managing conditions, player
+                    interactions, and dynamic quest states based on player
+                    actions.
+                    <br />
+                    <a className={styles.strongLink}>
+                      Database management:
+                    </a>{" "}
+                    Worked with SQL, MariaDB, and HeidiSQL to manage game data,
+                    including item drops, spawn points, and quest objectives. I
+                    optimized queries for performance and ensured data integrity
+                    within the game database.
+                    <br />
+                    <a className={styles.strongLink}>Core development:</a>{" "}
+                    Contributed to the server core using C++ and C#, fixing
+                    bugs, implementing new gameplay mechanics, and enhancing
+                    server stability.
+                  </p>
                 </div>
                 <div className={styles.contentIcons}>
-                  <i
-                    className={`devicon-mysql-plain-wordmark ${styles.icon}`}
-                  ></i>
                   <i
                     className={`devicon-mariadb-original-wordmark ${styles.icon}`}
                   ></i>
@@ -98,32 +105,29 @@ function Work() {
           )}
           {selectedTab === 2 && (
             <div className={styles.workContent}>
+              <p className={styles.contentP1}>Full-Stack Developer</p>
+              <p className={styles.contentP2}>Nov 2012 - Dec 2014</p>
               <FadeInSection>
-                <p className={styles.contentP1}>@Front-end web developer</p>
-                <p className={styles.contentP2}>
-                  Nov 2012 - Dec 2014 <br />
-                  Belgrade, Serbia · Hybrid
-                </p>
                 <div className={styles.contentP}>
-                  <FadeInSection>
-                    <p>
-                      <b>Six-Solutions</b> is an outsourcing company founded in
-                      2011.
-                    </p>
-                    <p>
-                      <br />
-                      Work on understanding client requirements, planning and
-                      designing applications, writing and optimizing code,
-                      testing and debugging, as well as deploying and
-                      maintaining applications. <br />
-                      Additionally, I write technical documentation, regularly
-                      report progress to clients, and collaborate with the team
-                      using versioning and task tracking tools.
-                    </p>
-                  </FadeInSection>
+                  <p>
+                    Work on understanding client requirements, planning and
+                    designing applications, writing and optimizing code, testing
+                    and debugging, as well as deploying and maintaining
+                    applications.
+                    <br />
+                    <br />I developed dynamic and interactive web features using
+                    jQuery, ensuring seamless user experiences, and built
+                    server-side logic and APIs using PHP with frameworks such as
+                    Laravel and CodeIgniter. <br />
+                    On the back-end, I worked extensively with MySQL databases,
+                    designing efficient schemas, writing complex queries, and
+                    optimizing database performance for scalability. <br /> I
+                    debugged and resolved issues in both development and
+                    production environments using tools like Xdebug and browser
+                    developer tools, ensuring robust and reliable applications.
+                  </p>
                 </div>
                 <div className={styles.contentIcons}>
-                  <i className={`devicon-css3-plain ${styles.icon}`}></i>
                   <i className={`devicon-javascript-plain ${styles.icon}`}></i>
                   <i className={`devicon-jquery-plain ${styles.icon}`}></i>
                   <i className={`devicon-angular-plain ${styles.icon}`}></i>
@@ -134,18 +138,14 @@ function Work() {
           )}
           {selectedTab === 3 && (
             <div className={styles.workContent}>
-              <p className={styles.contentP1}>@Database Administrator</p>
-              <p className={styles.contentP2}>
-                Jan 2015 - Present
-                <br />
-                Brussels Region, Belgium
-              </p>
+              <p className={styles.contentP1}>Database Administrator</p>
+              <p className={styles.contentP2}>Jan 2015 - Present</p>
               <FadeInSection>
                 <div className={styles.contentP}>
                   <p>
                     {" "}
-                    <b>Brain-Win Project</b> is consulting, outsourcing and
-                    training services company.
+                    Brain-Win Project is consulting, outsourcing and training
+                    services company.
                   </p>
                   <p>
                     <br />I monitor database performance, resolve issues, and
@@ -178,7 +178,7 @@ function Work() {
             <div className={styles.workContent}>
               <FadeInSection>
                 <p className={styles.contentP1}>
-                  @full-stack developer @Backend Developer
+                  Frontend developer | Backend developer
                 </p>
                 <p className={styles.contentP}>
                   <b>
@@ -201,19 +201,20 @@ function Work() {
               <FadeInSection>
                 <p className={styles.contentP}>
                   Some of the websites I worked on:
+                  <br />
                   <a
                     className={styles.workLinks}
                     href="https://www.rukoart.com"
                     aria-label="Visit rukoart site"
                   >
-                    <b>rukoart.com</b>,
+                    <b>rukoart.com</b> |
                   </a>
                   <a
                     className={styles.workLinks}
                     href="https://www.hologrammsolutions.at"
                     aria-label="Visit hologram solutions site"
                   >
-                    <b>hologrammsolutions.at</b>
+                    <b> hologrammsolutions.at</b>
                   </a>
                 </p>
               </FadeInSection>

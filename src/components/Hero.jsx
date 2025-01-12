@@ -21,7 +21,7 @@ function Hero() {
         </div>
         <div className={styles.heroDescription}>
           I&apos;m a <a className={styles.strongLink}>full-stack developer</a>{" "}
-          with a passion for creating dynamic, user-friendly web applications
+          with a passion for crafting dynamic, user-friendly web applications
           that deliver optimal performance and user experience.
         </div>
         <div>

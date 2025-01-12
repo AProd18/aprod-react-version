@@ -19,11 +19,10 @@ function About() {
           </FadeInSection>
           <FadeInSection>
             <p className={styles.aboutParagraph__second}>
-              I got my first job in 2009, playing one mmorpg on a private server
-              as a creator of in-game items and mechanics. Shortly after that,
-              in 2010/11, I began working in web development, which fulfilled me
-              the most, and I worked for a company called{" "}
-              <a className={styles.strongLink}>Six-Solutions.</a>
+              Since 2009, I worked as a creator of in-game items and mechanics
+              for an MMORPG on a private server. <br />
+              Shortly after that, in 2010/11, I began working in web
+              development, which fulfilled me the most.
               <br />
               Later, in 2013, I enrolled in the{" "}
               <a className={styles.strongLink} href="https://singidunum.ac.rs/">
@@ -38,14 +37,11 @@ function About() {
           </FadeInSection>
           <FadeInSection>
             <p className={styles.aboutParagraph__third}>
-              My main focus these days is building{" "}
-              <a className={styles.strongLink}>accessible</a>,
-              <a className={styles.strongLink}>
-                inclusive products and digital experiences
-              </a>{" "}
-              I have a proven track record of creating engaging, dynamic, and
-              responsive websites that are optimized for performance and user
-              experience.
+              I focus on creating <a className={styles.strongLink}>efficient</a>
+              , <a className={styles.strongLink}>reliable </a>web applications
+              that solve real-world problems. My goal? To help businesses
+              archieve their objectives with clean, maintainable code and
+              practical solutions.
             </p>
           </FadeInSection>
         </div>
