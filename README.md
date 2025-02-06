@@ -13,8 +13,3 @@ This is my personal portfolio website created using **React** and **CSS Modules*
 - CSS Modules
 - JavaScript (ES6+)
 - HTML5
-
-## How to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AProd18/aprod-react-version.git
