@@ -60,12 +60,18 @@ function Work() {
           {selectedTab === 1 && (
             <div className={styles.workContent}>
               <p className={styles.contentP1}>Game Developer</p>
-              <p className={styles.contentP2}>Jun 2009 - Nov 2010</p>
+              <p className={styles.contentP2}></p>
               <FadeInSection>
                 <div className={styles.contentP}>
                   <p>
-                    Gryphon server was a private World of Warcraft server where
-                    I started playing back in 2009. <br />
+                    <a
+                      className={styles.strongLink}
+                      href="https://www.xtremetop100.com/sitedetails-1132260351"
+                    >
+                      <a className={styles.strongLink}>Gryphon</a>
+                    </a>{" "}
+                    server was a private World of Warcraft server where I
+                    started playing back in 2009. <br />
                     Later on, I got employed to create in-game assets and work
                     in the database.
                   </p>
@@ -106,7 +112,7 @@ function Work() {
           {selectedTab === 2 && (
             <div className={styles.workContent}>
               <p className={styles.contentP1}>Full-Stack Developer</p>
-              <p className={styles.contentP2}>Nov 2012 - Dec 2014</p>
+              <p className={styles.contentP2}></p>
               <FadeInSection>
                 <div className={styles.contentP}>
                   <p>
@@ -139,13 +145,18 @@ function Work() {
           {selectedTab === 3 && (
             <div className={styles.workContent}>
               <p className={styles.contentP1}>Database Administrator</p>
-              <p className={styles.contentP2}>Jan 2015 - Present</p>
+              <p className={styles.contentP2}></p>
               <FadeInSection>
                 <div className={styles.contentP}>
                   <p>
                     {" "}
-                    Brain-Win Project is consulting, outsourcing and training
-                    services company.
+                    <a
+                      className={styles.strongLink}
+                      href="https://www.brainwin.be/"
+                    >
+                      <a className={styles.strongLink}>Brain-Win Project</a>
+                    </a>{" "}
+                    is consulting, outsourcing and training services company.
                   </p>
                   <p>
                     <br />I monitor database performance, resolve issues, and
