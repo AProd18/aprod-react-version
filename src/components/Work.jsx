@@ -144,7 +144,10 @@ function Work() {
           )}
           {selectedTab === 3 && (
             <div className={styles.workContent}>
-              <p className={styles.contentP1}>Database Administrator</p>
+              <p className={styles.contentP1}>
+                Help Desk Operator &gt; IT Support Specialist &gt; Database
+                Administrator
+              </p>
               <p className={styles.contentP2}></p>
               <FadeInSection>
                 <div className={styles.contentP}>
